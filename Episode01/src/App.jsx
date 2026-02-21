@@ -1,9 +1,12 @@
-import Container from "./components/container"
+import Container from "./components/Container"
+import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
     <div className="layout ">
-      <Container />
+      <Container>
+        <Navbar/>
+      </Container>
     </div>
   )
 }
