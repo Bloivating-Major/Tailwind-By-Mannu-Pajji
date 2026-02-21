@@ -13,8 +13,9 @@
 }
 
 .layout{
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to bottom, white , #dbeafe, white);
+  position: relative;
 }
 
 .navbar-root{
@@ -41,10 +42,12 @@
   text-decoration: none;
   color: #171717;
   font-weight: 600;
-  &:hover{
-    color: #737373;
-    transition: color 0.2s ease-out;
-  }
+  cursor: pointer;
+}
+
+.link-items:hover{
+  color: #737373;
+  transition: color 0.2s ease-out;
 }
 
 .btn{
@@ -58,10 +61,11 @@
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  &:hover{
-    background-color: #2563eb;
-    transition: background-color 0.2s ease-out;
-  }
+}
+
+.btn:hover{
+  background-color: #2563eb;
+  transition: background-color 0.2s ease-out;
 }
 
 .hero-root{
@@ -85,10 +89,11 @@
   align-items: center;
   gap: 4px;
   cursor: pointer;
-  &:hover{
-    background-color: #e5e7eb;
-    transition: background-color 0.2s ease-out;
-  }
+}
+
+.badge:hover{
+  background-color: #e5e7eb;
+  transition: background-color 0.2s ease-out;
 }
 
 .hero-title{
@@ -125,10 +130,11 @@
   gap: 6px;
   border-radius: 8px;
   cursor: pointer;
-  &:hover{
-    background-color: #d1d5db;
-    transition: background-color 0.2s ease-out;
-  }
+}
+
+.btn-secondary:hover{
+  background-color: #d1d5db;
+  transition: background-color 0.2s ease-out;
 }
 
 .hero-footer{
@@ -136,4 +142,57 @@
   font-weight: 500;
   color: #949da6;
   margin-top: 24px;
+}
+
+.left-line{
+  height: 100%;
+  width: 1.2px;
+  position: absolute;
+  left: -20px;
+  background: linear-gradient(to bottom, #bfdbfe, #e5e5e5);
+  opacity: 0.8;
+}
+
+.right-line{
+  height: 100%;
+  width: 1.2px;
+  position: absolute;
+  right: -20px;
+  background: linear-gradient(to bottom, #bfdbfe, #e5e5e5);
+  opacity: 0.8;
+}
+
+.hero-image-container{
+  position: relative;
+  width: 1024px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image{
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.horizontal-line{
+  height: 1px;
+  width: 99vw;
+  position: absolute;
+  top: -20px;
+  background-color: #d1d5db;
+  opacity: 0.8;
+}
+
+.layout-lines-container{
+  position: absolute;
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  inset: 0;
+  pointer-events: none;
 }
